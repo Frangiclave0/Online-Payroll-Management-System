@@ -1,0 +1,9 @@
+CREATE TABLE Payroll(
+    Payroll_ID NOT NULL PRIMARY KEY,
+    Pay_Date INTEGER NOT NULL,
+    Bonus Number(10,2)  NULL,
+    Taxes Number(10,2) NULL,
+    Salary_ID INTEGER NOT NULL,
+    FOREIGN KEY (Salary_ID)
+        REFERENCES Salary(Salary_ID)
+)
